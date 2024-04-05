@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps with a Shield | PASS</title>
+
+    <!-- ФАВИКОНЫ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bb1d5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/passgen.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../img/LOGO.png" alt="#" id="LOGOHOME">
+        <button id="txt_encryption">Шифрование текста</button>
+        <button id="HOME">На главную</button>
+        <button id="SignUpLogIn">SignUp/LogIn</button>
+    </div>
+    <div class="pass">
+        <p id="passup">Выберите параметры генерации ниже</p>
+        <div class="options">
+            <div class="length">
+                <p>Длина пароля&nbsp;&nbsp;&nbsp;<input type="range" min="0" max="50" step="1" value="0" id="passLength">&nbsp;&nbsp;&nbsp;<span id="passLengthDisplay">0</span></p>
+            </div>
+            <div class="options2">
+                <div class="numbers">
+                    <input type="checkbox" id="NCheckbox">
+                    Цифры
+                </div>
+                <div class="lowercase">
+                    <input type="checkbox" id="LCheckbox">
+                    Нижний регистр
+                </div>
+                <div class="symbols">
+                    <input type="checkbox" id="SCheckbox">
+                    Символы
+                </div>
+                <div class="uppercase">
+                    <input type="checkbox" id="UCheckbox">
+                    Верхний регистр
+                </div>
+            </div>
+        </div>
+        <button id="readybtn">Сгенерировать пароль</button>
+        <p id="ready">Ваш пароль<br><br></p>
+        <button class="ICO"><img src="../img/COPYICO.png" alt="Скопировать" id="ICO" title="Скопировать"></button>
+    </div>
+    <div class="info">
+        <p id="info">Генератор паролей - необходим для создания сложных и надежных комбинаций, обеспечивающих защиту от несанкционированного доступа к учетным записям и конфиденциальной информации. Путем генерации уникальных сочетаний символов, цифр и специальных знаков он делает пароли практически непригодными для угадывания или взлома методами перебора. Этот инструмент способствует повышению уровня безопасности онлайн-аккаунтов, защищая их от кибератак и утечек информации, и способствует обеспечению конфиденциальности пользовательских данных.</p>
+    </div>
+    <div id="error-message" class="error-message"></div>
+    <div id="successfully-message" class="successfully-message"></div>
+    <div class="footer"></div>
+</body>
+<!-- JS -->
+<script src="../JS/passgen.js"></script>
+</html>

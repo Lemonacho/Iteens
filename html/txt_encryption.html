@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps with a Shield | TXT</title>
+
+    <!-- ФАВИКОНЫ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bb1d5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ШИФРОВАНИЕ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/txt_encryption.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../img/LOGO.png" alt="#" id="LOGOHOME">
+        <button id="HOME">На главную</button>
+        <button id="pass_generation">Генерация пароля</button>
+        <button id="SignUpLogIn">SignUp/LogIn</button>
+    </div>
+    <div class="shifr">
+        <p id="txtinputup">Введите текст ниже</p>
+        <textarea id="txtinput" placeholder=""></textarea>
+        <div class="options">
+            <div class="md5">
+                <input type="radio" value="md5" id="md5" name="options">
+                md5
+            </div>
+            <div class="sha1">
+                <input type="radio" value="sha1" id="sha1" name="options">
+                sha1
+            </div>
+            <div class="sha256">
+                <input type="radio" value="sha256" id="sha256" name="options">
+                sha256
+            </div>
+            <div class="sha512">
+                <input type="radio" value="sha512" id="sha512" name="options">
+                sha512
+            </div>
+            <div class="rc4">
+                <input type="radio" value="rc4" id="rc4" name="options">
+                RC4
+            </div>
+            <div class="base64">
+                <input type="radio" value="base64" id="base64" name="options">
+                base64
+            </div>
+        </div>
+        <button id="readybtn">Выполнить шифрование</button>
+        <p id="ready"></p>
+        <button class="ICO"><img src="../img/COPYICO.png" alt="Скопировать" id="ICO" title="Скопировать"></button>
+    </div>
+    <div class="info">
+        <p id="info">Шифратор текста – это инструмент, который преобразует обычный текст в зашифрованный вид для обеспечения безопасности при передаче и хранении информации. Его основное предназначение заключается в защите конфиденциальных данных, делая их недоступными для посторонних лиц. Этот инструмент играет важную роль в обеспечении конфиденциальности данных при передаче через Интернет и гарантирует их целостность, предотвращая несанкционированные изменения.</p>
+    </div>
+    <div id="error-message" class="error-message"></div>
+    <div id="successfully-message" class="successfully-message"></div>
+    <div class="footer"></div>
+</body>
+<!-- JS -->
+<script src="../JS/txt_encryption.js" defer></script>
+</html>

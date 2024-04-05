@@ -1,0 +1,237 @@
+/* ШРИФТЫ */
+@font-face {
+    font-family: "fonts";
+    src: url("../Fonts/nyashasans.ttf") format("truetype");
+}
+
+body{
+    background-image: url(../img/photo_2024-03-25_14-34-17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.header{
+    background: rgba(37, 147, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 15px;
+    font-family: 'fonts', sans-serif;
+}
+
+#SignUpLogIn{
+    position: relative;
+    left: 50px;
+}
+
+#LOGOHOME{
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0px 0px 15px rgb(0, 0, 0));
+}
+
+.shifr{
+    width: 1000px;
+    height: 600px;
+    background: rgba(0, 104, 38, 0.557);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    border-radius: 15px;
+}
+
+#txtinputup{
+    font-size: 30px;
+    font-weight: bold;
+    color: azure;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#txtinput{
+    background: none;
+    border: none;
+    border-bottom: 4px solid white;
+    color: azure;
+    width: 955px;
+    height: 250px;
+    margin: 0 auto;
+    font-size: 25px;
+    outline: none;
+    position: relative;
+    left: 20px;
+    text-align: left;
+    resize: none; 
+}
+
+.options{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+
+#readybtn{
+    position: relative;
+    top: 70px;
+    left: 250px;
+    background-color: rgb(0, 218, 0);
+    border-radius:15px;
+    height: 60px;
+    padding: 10px;
+}
+
+#readybtn:hover {
+    animation: fadeInready 0.5s ease forwards;
+}
+
+#readybtn:not(:hover) {
+    animation: fadeOutready 0.5s ease forwards;
+}
+
+@keyframes fadeInready {
+    from {
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0, 0));
+    }
+    to {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 15px rgb(47, 255, 0));
+    }
+}
+
+@keyframes fadeOutready {
+    from {
+        filter: drop-shadow(0px 0px 15px rgb(47, 255, 0));
+    }
+    to {
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0, 0));
+    }
+}
+
+#ready{
+    background-color: rgba(29, 235, 29, 0.536);
+    backdrop-filter: blur(10px);
+    border-radius:5px;
+    width: 500px;
+    border: 1px solid lawngreen;
+    padding: 5px;
+    position: relative;
+    top: 80px;
+    left: 210px;
+    opacity: 0;
+    word-wrap: break-word;
+    font-size: 18px;
+    font-weight: 800;
+    user-select: text;
+}
+
+#ready.show{
+    opacity: 1;
+}
+
+#ICO{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 440px;
+    left: 700px;
+    z-index: 99;
+    opacity: 0;
+}
+
+#ICO.show{
+    opacity: 1;
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 950px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 83, 83, 0.3);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.successfully-message {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 950px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(13, 193, 0, 0.674);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgb(0, 117, 10);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.info{
+    width: 1000px;
+    height: 400px;
+    background: rgba(0, 104, 38, 0.557);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    border-radius: 15px;
+    bottom: 50px;
+}
+
+#info{
+    margin-top: 50px;
+    margin: left right 20px;
+    padding: 25px; 
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    font-family: 'fonts', sans-serif;
+}
+
+.footer{
+    position: relative;
+    top: 200px;
+    width: 1920px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}

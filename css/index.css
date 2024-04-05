@@ -1,0 +1,274 @@
+/* ШРИФТЫ */
+@font-face {
+    font-family: "fonts";
+    src: url("../Fonts/nyashasans.ttf") format("truetype");
+}
+
+body{
+    background-image: url(../img/photo_2024-03-25_14-34-17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.header{
+    background: rgba(37, 147, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 15px;
+    font-family: 'fonts', sans-serif;
+}
+
+#SignUpLogIn{
+    position: relative;
+    left: 50px;
+}
+
+#LOGOHOME{
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0px 0px 15px rgb(0, 0, 0));
+}
+
+#headsov1{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'fonts', sans-serif;
+}
+
+.sov1{ 
+    width: 1920px;
+    height: 600px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txt1,
+.txt2,
+.txt3,
+.txt4,
+.txt5,
+.txt6{
+    background: rgba(0, 104, 38, 0.557);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    width: 350px;
+    height: 450px;
+    font-size: 25px;
+    color: azure;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 15px;
+}
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5,
+#txt6{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.sov2{ 
+    width: 1920px;
+    height: 600px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infous{ 
+    width: 1600px;
+    height: 450px;
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+    background: rgba(0, 104, 38, 0.557);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#ussite{
+    margin: 0px;
+    padding: 0px; 
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: rgb(143, 222, 143);
+    font-weight: bold;
+    font-family: 'fonts', sans-serif;
+}
+
+#ussite1{
+    margin-top: 50px;
+    margin: left right 20px;
+    padding: 0px; 
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    font-family: 'fonts', sans-serif;
+}
+
+.footer{
+    position: relative;
+    top: 500px;
+    width: 1920px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#Contact{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    display: flex;
+    top: 25px;
+    left: 100px;
+}
+
+#WH,
+#TG{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#WH{
+    position: absolute;
+    top: 25px;
+    left: 1300px;
+}
+
+.WH:hover #WH {
+    animation: fadeInWH 0.5s ease forwards;
+}
+
+.WH:not(:hover) #WH {
+    animation: fadeOutWH 0.5s ease forwards;
+}
+
+@keyframes fadeInWH {
+    from {
+        transform: scale(0.8);
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0, 0));
+    }
+    to {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 15px rgb(47, 255, 0));
+    }
+}
+
+@keyframes fadeOutWH {
+    from {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 15px rgb(47, 255, 0));
+    }
+    to {
+        transform: scale(0.8);
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0, 0));
+    }
+}
+
+#TG{
+    position: absolute;
+    top: 25px;
+    left: 1600px;
+}
+
+.TG:hover #TG {
+    animation: fadeInTG 0.5s ease forwards;
+}
+
+.TG:not(:hover) #TG {
+    animation: fadeOutTG 0.5s ease forwards;
+}
+
+@keyframes fadeInTG {
+    from {
+        transform: scale(0.8);
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0, 0));
+    }
+    to {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 15px rgb(0, 217, 255));
+    }
+}
+
+@keyframes fadeOutTG {
+    from {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 15px rgb(0, 217, 255));
+    }
+    to {
+        transform: scale(0.8);
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0, 0));
+    }
+}
+
+#Email{
+    color: azure;
+    position: absolute;
+    top: 30px;
+    left: 450px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#Number{
+    color: azure;
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    font-size: 20px;
+    font-weight: bold;
+}

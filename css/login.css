@@ -1,0 +1,364 @@
+/* ШРИФТЫ */
+@font-face {
+    font-family: "fonts";
+    src: url("../Fonts/nyashasans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "fonts1";
+    src: url("../Fonts/Baskin\ Robbins\ Cyr_1.ttf") format("truetype");
+}
+
+body{
+    background-image: url(../img/photo_2024-03-25_14-34-17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.header{
+    background: rgba(37, 147, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 15px;
+    font-family: 'fonts', sans-serif;
+}
+
+#LOGOHOME{
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0px 0px 15px rgb(0, 0, 0));
+}
+
+#back{
+    position: absolute;
+    z-index: 99;
+    color: rgb(0, 166, 255, 0.5);
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'fonts1', sans-serif;
+    -webkit-text-stroke: 1px rgb(0, 46, 145);
+    letter-spacing: 7px;
+}
+
+.loginform{
+    width: 500px;
+    height: 600px;
+    background: rgba(0, 78, 29, 0.557);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgb(9, 9, 9);
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    border-radius: 15px;
+}
+
+#logintxt{
+    position: relative;
+    left: 170px;
+    top: 10px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 100px;
+    color: rgb(0, 123, 255);
+    -webkit-text-stroke: 1px black;
+}
+
+.username{
+    position: relative;
+    top: 50px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#username{
+    font-size: 30px;
+    font-family: 'Calibri';
+    margin:0px;
+    padding: 0px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#username1{
+    margin:0px;
+    border: none;
+    border-radius: 5px;
+    top: 50px;
+    padding: 0px;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    left: 120px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+
+.password{
+    position: relative;
+    top: 150px;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#password{
+    margin:0px;
+    padding: 0px;
+    font-weight: bolder;
+    font-family: 'Calibri';
+    text-align: center;
+}
+
+#password1{
+    margin:0px;
+    top: 50px;
+    padding: 0px;
+    padding-left: 15px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    display: flex;
+    outline: none;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    left: 120px;
+    font-size: 20px;
+}
+
+
+.signin{
+    position: absolute;
+    top: 420px;
+    width: 200px;
+    height: 200px;
+}
+
+#signinbtn{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: rgb(0, 249, 175);
+    border-radius: 15px;
+    color: white;
+    left: 100px;
+    top: -40px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+#signinbtn:hover{
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0px 0px 10px rgb(155, 239, 122); }
+    50% { box-shadow: 0px 0px 20px rgb(155, 239, 122); }
+    100% { box-shadow: 0px 0px 10px rgb(155, 239, 122); }
+}
+
+#signup {
+    position: relative;
+    top: 400px;
+    left: 115px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(0, 9, 104);
+}
+
+#Forgotpass {
+    position: relative;
+    top: 320px;
+    left: -125px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(0, 9, 104);
+}
+
+#modal-content{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#modal-content.show{
+    opacity: 1;
+}
+
+.forgotpassinput{
+    position: absolute;
+    top: 450px;
+    left: 200px;    
+    font-size: 20px;
+    width: 333px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.451);
+    border-radius:15px ;
+    z-index: 99;
+}
+
+#changePasswordCode{
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px orange solid;
+    background: rgb(255, 232, 80, 0.3);
+    backdrop-filter: blur(60px);
+    color: azure;
+    margin-left: 5px;
+}
+
+#changeEmailCode::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+#confirmChangePassword{
+    background-color: rgba(0, 125, 0, 0.435);
+    border: 1px green solid;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+#cancelChangePassword{
+    background-color: rgba(255, 0, 0, 0.523);
+    border: 1px rgb(128, 0, 0) solid;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.npass{
+    position: absolute;
+    top: 410px;
+    left: 200px;
+    font-size: 20px;
+    width: 300px;
+    height: 220px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.451);
+    border-radius:15px ;
+    opacity: 0;
+    z-index: 1;
+}
+
+.npass.show{
+    opacity: 1;
+}
+
+#newpassword{
+    position: relative;
+    top: -90px;
+    border-radius: 5px;
+    border: none;
+    left: 60px;
+    width: 200px;
+    height: 20px;
+}
+
+#confnewpassword{
+    position: relative;
+    top: -20px;
+    border-radius: 5px;
+    border: none;
+    left: -113px;
+    width: 200px;
+    height: 20px;
+}
+
+#confirmChangePassword1{
+    background-color: rgba(0, 125, 0, 0.435);
+    border: 1px green solid;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    position: relative;
+    top: 40px;
+    left: -330px;
+}
+
+#cancelChangePassword1{
+    background-color: rgba(255, 0, 0, 0.523);
+    border: 1px rgb(128, 0, 0) solid;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+    position: relative;
+    top: 40px;
+    left: -290px;
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 960px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 83, 83, 0.3);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.successfully-message {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 950px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(13, 193, 0, 0.674);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgb(0, 117, 10);
+    border-radius: 5px;
+    z-index: 1;
+}
